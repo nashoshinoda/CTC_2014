@@ -1,0 +1,171 @@
+/*
+Una clase se representa con un "."
+Un Id se representa con un "#"
+*/
+
+/**************ATRIBUTOS GENERALES**************/
+body{
+    font-family: Verdana, Arial, Georgia;
+    text-color: #032408;
+}
+
+nav ul li{
+    display: inline-block;  /*Muestra los elementos de forma horizontal*/
+    margin-right: 20px;
+    color: #1D1D1D;
+    cursor: pointer;
+    padding: 5px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+}
+
+nav ul li:hover{
+    color: #FFF;
+    background-color: #6cf;
+    border-radius: 5px;
+}
+
+a:visited{
+    color:#007BC4;
+    font-weight: bold; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #007BC4;
+}
+
+#main{
+    height: 450px;
+}
+
+#web{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+#header{
+    height: 100px;
+    background-color: #007BC4;
+}
+
+#content{
+    /*width: 80%;*/
+    background-color: #66ffff;
+    min-height: 400px;
+    float: right; /*float:right para colocar el contenido a la derecha*/
+    overflow: scroll;
+    position: relative;
+    left: 290px;
+    width: 500px;
+    margin:0 auto;
+    text-align:center;
+}
+
+#footer{
+    height:40px;
+    background-color: #007BC4;
+    clear:both;
+    text-align: center;
+    color: #FFF;
+    font-family: Verdana, Arial, Georgia;
+}
+
+#footer span{
+    font-size: 10px;
+}
+
+
+/**************TABLA DE NODOS**************/
+#data{
+    display: none;
+    float: right;
+    margin: 0px 300px;
+}
+
+#area_res{
+    position:absolute;
+    width:400px;
+    height:303px;
+    z-index:1;
+    left: 400px;
+    top: 180px;
+    border-collapse: collapse;
+}
+
+table.hovertable tr:nth-child(even){
+    background: #EEE;
+ }
+ 
+table.hovertable tr:nth-child(odd){
+    background: #FFF;
+ }
+
+/**************AGENDA**************/
+#infoContacts{
+    /*Estilo para el div que muestra la información*/
+}
+
+#tablaContactos{
+    background-color:#C1DAD7;
+    border-right: 0px solid #C1DAD7;
+    border-bottom: 0px solid #C1DAD7;
+    border-top: 0px solid #C1DAD7;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 6px 6px 6px 12px;
+    color: #007BC4;
+    margin-right: 10px;
+}
+ 
+ table.hovertable th {
+    background-color:#c3dde0;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+ }
+ 
+ table.hovertable tr:nth-child(even){
+    background: #EEE;
+ }
+ 
+ table.hovertable tr:nth-child(odd){
+    background: #FFF;
+ }
+ 
+ table.hovertable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #a9c6c9;
+    color: #007BC4;
+ }
+
+/*tr:nth-child(odd){
+    background: #EEE;
+    color:#007BC4;
+}
+
+tr:nth-child(even){
+    background: #FFFFFF;
+    color:#007BC4;
+}*/
+
+
+/**************TABLA DE RACKS**************/
+#area_racks{
+    position: absolute;
+    width:400px;
+    height:303px;
+    z-index:1;
+    left: 600px;
+    top: 180px;
+    border-collapse: collapse;
+}
+
+#area_racks img{
+    width: 100px;
+    height: 400px;
+}
