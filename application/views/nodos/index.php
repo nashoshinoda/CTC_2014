@@ -47,8 +47,8 @@
               <th>NIVEL</th>
               <th>TIPO</th>
               <th>DIRECCIÓN</th>
-              <th>LATITUD</th>
-              <th>LONGITUD</th>
+              <!--<th>LATITUD</th>
+              <th>LONGITUD</th>-->
               <th>COLONIA</th>
           </tr>
       </thead>
@@ -67,8 +67,8 @@
             <td><?php echo $rBusqueda[$i]['nivelNodo']; ?></td>
             <td><?php echo $rBusqueda[$i]['tipoNodo']; ?></td>
             <td><?php echo $rBusqueda[$i]['direccionNodo']; ?></td>
-            <td><?php echo $rBusqueda[$i]['latNodo']; ?></td>
-            <td><?php echo $rBusqueda[$i]['lngNodo']; ?></td>
+            <!--<td><?php //echo $rBusqueda[$i]['latNodo']; ?></td>
+            <td><?php //echo $rBusqueda[$i]['lngNodo']; ?></td> -->
             <td><?php echo $rBusqueda[$i]['nombreColonia']; ?></td>
           </tr>
           <?php
