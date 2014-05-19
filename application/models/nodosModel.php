@@ -35,8 +35,8 @@ class NodosModel extends CI_Model{
         $this->db->join('nodos n', 'r.reIdNodo = n.nodoId', 'inner');
         if(!empty($busquedaNodo) && !empty($busquedaDireccion) && !empty($busquedaColonia)){
             $this->db->where('numNodo', $busquedaNodo);
-            $this->db->or_where('direccionNodo', $busquedaDireccion);
-            $this->db->or_where('nombreColonia', $busquedaColonia);
+            $this->db->where('direccionNodo', $busquedaDireccion);
+            $this->db->where('nombreColonia', $busquedaColonia);
         }
         if($busquedaNodo >= 0 && empty($busquedaColonia) && empty($busquedaDireccion)){
             $this->db->where('numNodo', $busquedaNodo);
